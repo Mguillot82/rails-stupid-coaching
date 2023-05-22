@@ -1,0 +1,22 @@
+<h1>Stupid Coaching</h1>
+<hr>
+<div class="container">
+  <div class="hstack">
+    <div class="vr p-1 bg-secondary me-3"></div>
+    <div class="row">
+      <div><%=@user_answer%></div>
+      <div class="fst-italic"> - You </div>
+    </div>
+  </div>
+  <hr>
+    <div class="hstack">
+      <div class="vr p-1 bg-secondary"></div>
+      <div class="row ms-1">
+        <div class="alert alert-warning" role="alert"><%= @coach_answer%></div>
+        <div class="fst-italic"> - Your coach</div>
+      </div>
+    </div>
+  <div class="pt-3">
+    <%= link_to "Ask a question to our beloved coach", "/ask" %>
+  </div>
+</div>
